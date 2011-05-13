@@ -1,0 +1,71 @@
+/* ######### CSS for top level tabs ######### */
+
+.tabsmenuclass ul{
+overflow: hidden;
+width: 100%;
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+.tabsmenuclass li{
+float: left;
+list-style: none;
+padding: 0px;
+text-align: left;
+margin: 0px;
+/* border: 1px solid #ccc; */
+}
+
+.tabsmenuclass a{
+display: block;
+padding-right: 7px;
+padding-left: 7px;
+/*background: #E8E8E8;
+color: black;
+margin-right: 1px; */
+font-size: 1.18em; 
+color:#666666;
+text-decoration: none;
+}
+
+.tabsmenuclass a:hover, .tabsmenuclass a.selected{
+background: #eeeeee;
+color:#69F;
+}
+
+/* ######### CSS for sub menu container below ######### */
+
+.tabsmenucontentclass{
+clear: left;
+background: #eeeeee;
+color:#222222;
+height: 24px;
+/*font-size: 1.04em; */
+padding-left: 7px;
+margin-bottom: 6px;
+/* padding: 5px; */
+/* border: 1px solid silver; */
+}
+
+.tabsmenucontentclass a {
+color:#555555;
+margin-right: 14px;
+}
+
+.tabsmenucontentclass a:hover{
+color:#69F;
+}
+
+.tabsmenucontentclass ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.tabsmenucontentclass li{
+float: left;
+margin-top: 2px;
+margin-right: 1em;
+list-style: none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>SidebarL_M_MM_MCC</title>
+<!-- TemplateEndEditable -->
+<!-- START links for common functions (layout, menu, RSS feed) -->
+<link rel="stylesheet" type="text/css" href="../yui/base/base.css"> 
+	<link rel="stylesheet" type="text/css" href="../yui/grids/grids.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/swfobject_modified.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../mouseovertabs.css" />
+	<script src="../mouseovertabs.js" type="text/javascript"></script> 
+	<script src="../js/jquery-1.2.1.min.js" type="text/javascript"></script>
+	<script src="../js/rsswidget.js" type="text/javascript"></script>
+<!-- END links for common functions (layout, menu, RSS feed) -->
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+
+<!-- START js activation code -->
+<script type="text/javascript">
+	var feed = "http://www.facebook.com/feeds/notes.php?id=104442313608&viewer=1840576015&key=bcbe6730e0&format=rss20";
+	var target_id = "#rss-widget";
+	Technosophos.rssWidget(feed, target_id);
+</script>
+
+<!-- END js activation code -->
+<div id="doc2" class="yui-t2">
+   <div id="hd" role="banner"><h1>Header</h1></div>
+   <div id="bd" role="main">
+	<div id="yui-main">
+	<div class="yui-b">
+	  <div class="yui-g">
+	<!-- YOUR DATA GOES HERE -->
+	<!-- TemplateBeginEditable name="Main area" -->Main area<!-- TemplateEndEditable --> </div>
+</div>
+	</div>
+	<div class="yui-b"><!-- YOUR NAVIGATION GOES HERE -->
+     <!-- TemplateBeginEditable name="Sidebar" -->Sidebar<!-- TemplateEndEditable --></div>
+	
+  </div>
+   <div id="ft" role="contentinfo"><p align="center">Copyright (C) 2009 Ecoinformatics Collaboratory. All rights reserved.</p></div>
+</div>
+
+<!-- START js activation code -->
+<script type="text/javascript">
+	mouseovertabsmenu.init("mytabsmenu", "mysubmenuarea", true)
+	swfobject.registerObject("FlashID");
+</script>
+<!-- END js activation code -->
+
+</body>
+</html>
+

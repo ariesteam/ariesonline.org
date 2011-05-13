@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   	<title>YUI Base Page</title>
+ 	<link rel="stylesheet" type="text/css" href="yui/base/base.css"> 
+	<link rel="stylesheet" type="text/css" href="yui/grids/grids.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<link rel="stylesheet" type="text/css" href="yui/menu/assets/skins/sam/menu.css">
+
+	<script type="text/javascript" src="yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+	<script type="text/javascript" src="yui/container/container_core-min.js"></script>
+	<script type="text/javascript" src="yui/menu/menu-min.js"></script>
+
+	<script src="js/sitemenu.js" type="text/javascript"></script>
+	<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+	<script src="js/mootools.js" type="text/javascript"></script>
+	<script src="js/roundedcorners.js" type="text/javascript"></script>
+	<link href="css/roundedcorners.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+  		window.addEvent('domready', function(){
+		var box1 = new RoundedCorners('pf_roundedCorners1','.roundedContent230', {radius: 49});
+		var image1 = new RoundedCorners('pf_roundedCorners1','.roundedImage', {overlay: true, radius: 20, cls: 'image'});
+  		});
+	</script>
+</head>
+
+<body>
+<div id="doc2" class="yui-t6">
+   <div id="hd" role="banner">
+  </div>
+   <div id="bd" role="main">
+	<h1>Aesthetics module</h1>	
+    <div id="yui-main">
+ 	 <div class="yui-b">
+	  <div class="yui-g">
+		<p class="teaser">This module computes benefits related to the sensory enjoyment, recreational potential and cultural values of the landscape. <a href="science/beneficiaries.html">Beneficiaries</a> can be customized to reflect specific constituencies, such as property owners or tourists. <a href="science/sink.html">Sink models</a> are built for the area to represent visual blight or obstacles to access.</p>
+		<p class="teaser">Porco qui porco la', qua ci sta bene un altro paragrafo. Non troppo corto se possibile, grazie. Per esempio
+    sul valore estetico, con qualche numero preso da pubblicazioni, e sulle aree geografiche.</p>
+
+	  </div>
+<div class="yui-g">
+    <div class="yui-u first">
+      <div id="pf_roundedCorners2">
+        <div class="roundedContent230">
+		    <h2>Aesthetic benefits</h2>
+            <hr/>
+			<!-- benefits panel -->
+		    <div>
+		      <h5 style="color:#69F">Viewshed</h5>
+	     	  <p>The benefit resulting from the viewing of beauty, such as mountains or water bodies, is carried across line 
+             	 of sight and affected by the amount of visual blight in between.
+             	 <img src="img/learn.gif" width="91" height="17" align="right"></p>
+		      <h5 style="color:#69F">Proximity to open space </h5>
+	    	  <p>The benefit resulting from access to nearby open space, such as parks and golf courses is carried by short-range transportation and affected by interruptions, traffic.<img src="img/learn.gif" width="91" height="17" align="right"></p>
+              <h5 style="color:#69F">Cultural identity </h5>
+	    	  <p>Some features of the landscape are important to determine the sense of identity of local people. Beneficiaries of
+              cultural identity tend to value it very highly.<img src="img/learn.gif" width="91" height="17" align="right"></p>
+        </div>        
+       </div>
+     </div>
+    </div>
+        <div class="yui-u" style="margin-top:30px">
+			<h2>In the field</h2>
+            <hr/>
+             <h5 style="color:#69F">Kent, WA viewshed</h5><br/>
+             <p align="center"><img src="img/seattle.jpg" class="roundedImage"/></p>
+	    	 <p>ARIES is being used to help planners understand the consequences of development on property value 
+             through impacts on aesthetic views. <a href="casestudies/kent.html">More...</a></p>
+	    </div>
+	</div>
+</div>
+	</div>
+	<div class="yui-b"><!-- YOUR NAVIGATION GOES HERE -->
+	  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="350" height="550" id="FlashID" title="Viewshed results">
+	    <param name="movie" value="swg/analysis.swf">
+	    <param name="quality" value="high">
+	    <param name="wmode" value="opaque">
+	    <param name="swfversion" value="6.0.65.0">
+	    <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+	    <param name="LOOP" value="false">
+	    <param name="PLAY" value="false">
+	    <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+	    <!--[if !IE]>-->
+	    <object type="application/x-shockwave-flash" data="swg/analysis.swf" width="350" height="550">
+	      <!--<![endif]-->
+	      <param name="quality" value="high">
+	      <param name="wmode" value="opaque">
+	      <param name="swfversion" value="6.0.65.0">
+	      <param name="expressinstall" value="Scripts/expressInstall.swf">
+	      <param name="LOOP" value="true">
+	      <param name="PLAY" value="false">
+	      <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+	      <div>
+	        <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+	        <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+          </div>
+	      <!--[if !IE]>-->
+        </object>
+	    <!--<![endif]-->
+      </object>
+	</div>
+	
+  </div>
+   <div id="ft" role="contentinfo"><hr/> <p align="center">Copyright (C) 2009 Ecoinformatics Collaboratory and the ARIES Consortium. All rights reserved.</p></div>
+</div>
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+//-->
+</script>
+</body>
+</html>
+

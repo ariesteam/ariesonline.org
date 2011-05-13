@@ -1,0 +1,1086 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>ARIES :: Aesthetics module specs</title>
+<!-- START links for common functions (layout, menu, RSS feed) -->
+<link rel="stylesheet" type="text/css" href="yui/base/base.css"> 
+	<link rel="stylesheet" type="text/css" href="yui/grids/grids.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/swfobject_modified.js" type="text/javascript"></script>
+    
+	<script src="js/mootools.js" type="text/javascript"></script>
+	<script src="js/roundedcorners.js" type="text/javascript"></script>
+	<link href="css/roundedcorners.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+  		window.addEvent('domready', function() {
+//		var box1 = new RoundedCorners('pf_roundedCorners1','.roundedContent230', {radius: 49});
+		var image1 = new RoundedCorners('pf_roundedCorners1','.roundedImage', {overlay: true, radius: 20, cls: 'image'});
+  		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="mouseovertabs.css" />
+	<script src="mouseovertabs.js" type="text/javascript"></script> 
+	<script src="js/jquery-1.2.1.min.js" type="text/javascript"></script>
+	<script src="js/rsswidget.js" type="text/javascript"></script>
+<!-- END links for common functions (layout, menu, RSS feed) -->
+
+<script src="swf/swfobject_modified.js" type="text/javascript"></script>
+<style type="text/css">
+.style8 {
+	text-align: left;
+}
+.style9 {
+	text-align: left;
+	vertical-align: top;
+}
+.style10 {
+	color: #6699FF;
+}
+.style11 {
+	color: #008000;
+}
+.style12 {
+	font-size: large;
+}
+.style13 {
+	text-indent: -12px;
+	line-height: 150%;
+	margin-left: 12px;
+}
+.style14 {
+	font-size: 100%;
+}
+.style19 {
+	font-size: small;
+}
+.style21 {
+	font-size: small;
+	text-align: left;
+}
+.style22 {
+	border-collapse: collapse;
+	font-size: 11.0pt;
+	font-family: Calibri, sans-serif;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+}
+.style23 {
+	font-size: x-small;
+}
+</style>
+</head>
+<body>
+
+<!-- START js activation code -->
+<script type="text/javascript">
+	var feed = "http://www.facebook.com/feeds/notes.php?id=104442313608&viewer=1840576015&key=bcbe6730e0&format=rss20";
+	var target_id = "#rss-widget";
+	Technosophos.rssWidget(feed, target_id);
+</script>
+<!-- END js activation code -->
+
+<div id="doc2" class="yui-t2">
+
+   <div id="hd" role="banner">
+
+<!-- START header (menu, banner, rule) -->
+	<!-- START menu -->
+	<div id="mytabsmenu" class="tabsmenuclass">
+		<ul class="tabsmenuclass">
+			<li><a href="main.html" rel="gotsubmenu">About</a></li>
+			<li><a href="modules.html" rel="gotsubmenu">Modules</a></li>
+			<li><a href="science.html" rel="gotsubmenu">Case studies</a></li>
+			<li><a href="science.html" rel="gotsubmenu">Resources</a></li>
+		</ul>
+	</div>
+	<div id="mysubmenuarea" class="tabsmenucontentclass">
+	  <a href="submenucontents.htm" style="visibility:hidden">Sub Menu contents</a>
+	</div>
+	<!-- END menu -->
+   <img src="img/banner.gif" />
+<!-- END header (menu, banner, rule) -->
+
+   </div><!-- end hd banner -->
+
+   <div id="bd" role="main">
+	<div class="yui-g">
+	<!-- YOUR DATA GOES HERE -->
+	<h1>Aesthetics module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="style1"><strong class="style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Current Status: </strong> 
+	<span class="style11"><strong class="style12">Functional</strong></span></span><span class="style12">
+	</span>
+		</h1>
+    <h6 style="background-color:#eeeeee">
+      <!--<![endif]-->
+    </object>This module computes benefits related to the sensory enjoyment, 
+	  recreational potential and cultural values of the landscape. 
+	  <a href="science/beneficiaries.html">Beneficiaries</a> can be customized 
+	  to reflect specific constituencies, such as property owners or tourists. 
+	  <a href="science/sink.html">Sink models</a> are built for the area to 
+	  represent visual blight or obstacles to access.&nbsp;</h6>
+</div>
+		<div class="yui-gd">
+    		<div class="yui-u first">
+				<div style="padding-right:12px">
+					<h2 style="margin-top:32px">Definitions</h2>
+					<hr/>
+					<!-- benefits panel -->
+                    
+		      <h5 style="color:#69F">Viewshed</h5>
+	     	  <p>The benefit resulting from the viewing of beauty, such as mountains or water bodies, is carried across line 
+             	 of sight and affected by the amount of visual interruptions in between. </p>
+		      <h5 style="color:#69F">Proximity to open space </h5>
+	    	  <p>The benefit resulting from access to nearby open space, such as parks and golf courses is carried by short-range transportation and affected by interruptions, traffic.</p>
+              <h5 style="color:#69F">Cultural identity </h5>
+	    	  <p>Some features of the landscape are important to determine the sense of identity of local people. Beneficiaries of
+              cultural identity tend to value it very highly.</p>
+				</div>
+			</div>
+			<div class="yui-u">
+			<!-- YOUR DATA GOES HERE -->
+				<table width="100%" border="0" cellpadding="0">
+					<tr>
+						<td colspan="3">
+						<h2 style="margin-top:32px">Module specs</h2>
+						<hr/>
+					<!-- benefits panel -->
+                    
+		      			</td>
+					</tr>
+					<tr>
+						<td width="50%" class="style9">
+						<h5 class="style10" style="width: 609px">Case studies</h5>
+						<h5 class="style21" style="width: 609px">(1) Puget Sound, Washington State 
+						(2) San Pedro River, Arizona </h5>
+						<h5 class="style19" style="width: 609px">&nbsp;</h5>
+						<h5 class="style10" style="width: 609px">E<span class="style14">xplanation</span></h5>
+						<p class="MsoNormal">Aesthetic values are typically 
+						defined as the value derived from views (Bourassa et al. 
+						2004) or proximity to open space (McConnell and Walls 
+						2005).<span>&nbsp; </span>These values often accrue to 
+						housing or property values and can thus be measured 
+						using hedonic pricing.<span>&nbsp; </span>Homeowners 
+						typically gain some combination of benefits through 
+						sensory enjoyment of views of nearby open space, 
+						proximity to open space for recreation, or privacy.<span>&nbsp;
+						</span>Park visitors (e.g., hikers) and drivers along 
+						scenic highways may also value scenic views (Walsh et 
+						al. 1990).<span>&nbsp; </span>Spatial mapping of 
+						homeowners is relatively straightforward, as housing 
+						units, open space, and viewsheds have all been 
+						frequently analyzed in hedonic studies of amenity 
+						values.<span>&nbsp; </span>However, the spatial flow 
+						characteristics of open space proximity and viewsheds 
+						differ, with the value of proximity declining with 
+						distance from the open space resource, while viewsheds 
+						depend on an unimpeded line of sight to a visually 
+						significant object, such as a mountain or water body.</p>
+						<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+						<p class="MsoNormal">In Western Washington, sources of 
+						aesthetically valuable views include large mountains 
+						like Mount Rainier and water bodies such as Western 
+						Washington or inland lakes.<span>&nbsp; </span>Users of 
+						aesthetic views are found in residential areas.<span>&nbsp;
+						</span>As a view travels from source to user, it may be 
+						physically blocked by buildings, trees, or topography.
+						<span>&nbsp;</span>Its quality may be depleted by air 
+						pollution or visual blight, such as highways, forest 
+						clearcuts, or visually unappealing land use types like 
+						commercial, industrial, or transportation uses.<span>&nbsp;
+						</span>Such sources of visual blight can also be mapped.
+						<span>&nbsp;</span>Higher concentrations of residential users 
+						or visual blight lead to higher levels of ecosystem 
+						service use or sinks, respectively.<b><o:p></o:p></b></p>
+						<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+						<div class="style8">
+	    	<h5 class="style10">Assumptions</h5>
+							<p class="MsoNormal"><b>Aesthetic proximity source 
+							value. </b>Aesthetic proximity depends foremost on 
+							having open space in some form – forests, wetlands, 
+							beach, riverfront, lakefront, golf courses, 
+							cemeteries, farmland, or parks.<span>&nbsp; </span>
+							We derived prior probability distributions for the 
+							presence/absence of these features from a 
+							qualitative estimates of LULC types in Western 
+							Washington, based on the 2001 National Land Cover 
+							Dataset and local land use data.<span>&nbsp; </span>
+							The intermediate variable “OpenSpaceResource” 
+							aggregates these open space types, using a NoisyMax 
+							node, based on the concept that the most highly 
+							valued land use type will provide value (i.e., no 
+							synergistic effects).<span>&nbsp; </span>Values for 
+							“high,” “moderate,” “low,” and “none” indicate the 
+							likelihood of higher or lower value that could be 
+							generated by each land cover type, with the highest 
+							values for beach, parks, lakefront, and riverfront 
+							(which frequently feature public access and open 
+							water), the lowest values for farmland (known to 
+							provide disamenities like noise and odors), 
+							cemeteries and golf courses (which may have limited 
+							public access), and intermediate values for wetlands 
+							and forests.<span>&nbsp; </span>These relative 
+							values could be adjusted for different parts of the 
+							world based on local preferences and hedonic studies 
+							indicating relative values of different types.<span>&nbsp;
+							</span>McConnell and Walls (2005) provide a 
+							comprehensive literature review of hedonic values 
+							for different types of open space, but since studies 
+							are rarely easily comparable, they do not provide a 
+							general ranking of the values of open space types.</p>
+							<p class="MsoNormal"><o:p>&nbsp;</o:p><o:p>&nbsp;</o:p></p>
+							<p class="MsoNormal">Along with the type of open 
+							space, its quality matters in determining value.<span>&nbsp;
+							</span>A series of papers from Maryland noted that 
+							homeowners are sensitive as to whether land is 
+							permanently protected or may be developed in the 
+							future <span>(Irwin and Bockstael 2001, Irwin 2002, 
+							Geoghegan 2002, Geoghegan et al. 2003).&nbsp; We 
+							assumed that 20% of the landscape is protected, a 
+							prior probability that could be adjusted for 
+							different urban areas. Troy and Grove (2008) found 
+							crime to reduce the value of parks in urban areas 
+							and potentially in economically distressed suburbs.&nbsp; 
+							We assumed that 20% of parks are located in urban 
+							areas where crime may be problematic.&nbsp; Anderson 
+							and West (2002) found park value to increase with 
+							size.&nbsp; We assumed that small parks are most 
+							abundant, with the abundance of parks in a 
+							particular size class declining as park size grows; 
+							we discretized park size by natural breaks.&nbsp; 
+							Finally, poor water quality could reduce the value 
+							of open space due to odors, public health concerns, 
+							or reduced recreational opportunities.&nbsp; We 
+							assumed that 80% of open space has no open water, 
+							and assume that equal areas meet water quality 
+							standards, are waters of concern, or require a TMDL 
+							(indicating poor water quality).&nbsp; We aggregated 
+							these four independent measures of open space 
+							quality into a single intermediate variable, 
+							“Resource Quality,” in order to maintain 
+							tractability of conditional probability tables.&nbsp; 
+							We assumed that the highest value will occur in 
+							large, formally protected open space with no water 
+							quality problems or crime, and that the lowest value 
+							will occur in small, unprotected parcels of open 
+							space with crime and/or water quality problems.&nbsp; 
+							We thus peg the corners of the conditional 
+							probability table for Resource Quality and fill in 
+							intermediate values.&nbsp; We assume that changes to 
+							the discrete states of each of these attributes 
+							cause relatively small changes in value, with the 
+							exception of Formal Protection, since unprotected 
+							land is potentially much less valuable for its open 
+							space quality.<o:p>&nbsp; </o:p>
+							</span></p>
+							<p class="MsoNormal">&nbsp;</p>
+							<p class="MsoNormal"><span>
+							<o:p></o:p>
+							Finally, we combined Open Space Resource and 
+							Resource Quality into a single top node, “Proximity 
+							Source Value.”&nbsp; We note that high-quality, 
+							high-value LULC types will produce the most amenity 
+							value and vice versa, peg the corners, and 
+							interpolate intermediate values.</span></p>
+							<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+							<p class="MsoNormal"><b>Aesthetic proximity use.<span>&nbsp;
+							</span></b>For residential aesthetic proximity 
+							value, housing must be near open space.<span>&nbsp;
+							</span>The use model identifies housing, its value, 
+							and the relative scarcity of open space (e.g., 
+							urban, suburban, or rural setting), Figure 3.<span>&nbsp;
+							</span>Numerous authors have noted that open space 
+							of various types is valuable in urban settings, 
+							where user populations and scarcity are greater, and 
+							less valuable in rural settings (including Brander 
+							et al. (2006),<b> </b><span>Boyer and Polasky 
+							(2004), Doss and Taff (1996), Mahan et al. (2000), 
+							Reynolds and Regalado (2002), Bin and Polasky 
+							(2005), and Schultz and Taff (2004) for wetlands, 
+							and Anderson and West (2002) for parks).&nbsp; We 
+							assumed that 20% of the landscape has housing, that 
+							10, 30, and 60% of the landscape are in urban, 
+							suburban, and rural settings, respectively, and that 
+							75% housing values are most typically at moderate to 
+							low levels, with 15% at very low levels and 10% at 
+							high or very high levels.&nbsp; We discretized 
+							population density, a proxy for urbanization, and 
+							housing value using natural breaks.&nbsp; These 
+							assumptions are for Western Washington and could be 
+							adapted for other areas or more empirically measured 
+							if desired.&nbsp; “AestheticProximityUse,” the 
+							measure of use, requires housing to be present in 
+							order to have value, with value declining more 
+							quickly moving from urban to rural and less quickly 
+							moving from high to lower classes of housing values.</span><b><o:p></o:p></b></p>
+							<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+							<p class="MsoNormal"><b>Aesthetic proximity sinks.<span>&nbsp;
+							</span></b>If ease of access, privacy, and quiet 
+							associated with open space are the ultimate source 
+							of proximity value, highways that prevent access or 
+							disturb aesthetic quality would act as sinks.<span>&nbsp;
+							</span>We assume that major roads are present on 
+							2.5% of the landscape, and that in 90% of cases 
+							these roads will act as sinks.</p>
+							<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+							<p class="MsoNormal"><b>Aesthetic proximity flow.<span>&nbsp;
+							</span></b>Most studies have found<b> </b>proximity 
+							value to decline with distance, as housing directly 
+							adjacent to open space would be more highly valued 
+							than housing a short walk from open space, which 
+							would be more valued than housing a long walk or 
+							drive from open space.<span>&nbsp; </span>Most of 
+							the studies reviewed by McConnell and Walls (2005) 
+							examined housing within a 0.5 to 1-mile radius of 
+							open space, and note that open space-related amenity 
+							values drop rapidly past that distance.<span>&nbsp;
+							</span>We thus represented aesthetic proximity value 
+							as distance (either linear or through road networks) 
+							to open space that starts off high near open space 
+							but drops off quickly moving farther away from open 
+							space.</p>
+							<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+							<p class="MsoNormal"><b>Aesthetic view source value.<span>&nbsp;
+							</span></b>Mountains and open water are two commonly 
+							valued natural objects in viewsheds, particularly 
+							for Western Washington (Benson et al. 1998, Bourassa 
+							et al. 2004).<span>&nbsp; </span>As priors, we 
+							estimated that 15% of the landscape is ocean, 2% is 
+							inland lakes, 5% large mountains (&gt;2,750 m), and 10% 
+							small mountains (2,000-2,750 m; these numbers are 
+							specific to Western Washington).<span>&nbsp; </span>
+							We aggregated these values as “ViewSourceValue” in a 
+							conditional probability table by noting that higher 
+							values were ascribed to ocean views, lowest values 
+							were ascribed to mountain views, and intermediate 
+							values were ascribed to lake views for the region 
+							(Benson et al. 1998, Bourassa et al. 2004, Figure 
+							4).<span>&nbsp; </span>Although skyline views may be 
+							valuable, we do not include them in our analysis 
+							since skylines are man-made features and thus do not 
+							provide an “ecosystem service.”</p>
+							<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+							<p class="MsoNormal">Views in other regions should 
+							account for local preferences to the degree possible 
+							as these preferences are unlikely to be uniform 
+							everywhere (Bourassa et al. 2004).<span>&nbsp;
+							</span>For example, Steinitz et al. (2003) provide 
+							an example of viewshed surveys for southeast 
+							Arizona), based on the USFS (1995) framework.<span>&nbsp;
+							</span>Sander and Polasky (2009) estimate value of 
+							proximity and viewsheds simultaneously for the 
+							Ramsey County, MN.</p>
+							<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+							<p class="MsoNormal"><b>Aesthetic view use. </b>The 
+							use model for aesthetic views is quite similar to 
+							that for proximity, with the exception that the “UrbanProximity” 
+							node drops out.<span>&nbsp; </span>This is because 
+							views are potentially equally valuable in urban, 
+							suburban, or rural settings.<span>&nbsp; </span>The 
+							use model thus simply identifies housing and its 
+							value as determinants of use.<span>&nbsp; </span>We 
+							assumed the same priors as for the aesthetic 
+							proximity use model.<span>&nbsp; The conditional 
+							probability table for “ViewUse” simply states that 
+							in order to have value, housing must be present, and 
+							that the added value is greater for higher-value 
+							housing.</span><b><o:p></o:p></b></p>
+							<p class="MsoNormal">&nbsp;</p>
+							<p class="MsoNormal"><b>Aesthetic view sinks.<span>&nbsp;
+							</span></b>We assumed that either obstructions 
+							(e.g., buildings or vegetation) or undesirable 
+							visual features (blight) directly obstruct or reduce 
+							the quality of views (Benson et al. 1998, Bourassa 
+							et al. 2004, Gret-Regamey et al. 2008). Views of 
+							lost forest cover, including clearcuts, could also 
+							act as a sink, reducing view quality (Wundscher et 
+							al. 2008).<span>&nbsp; </span>We assumed that 
+							highways or other major roads occupy 2.5% of the 
+							landscape, commercial, industrial, or transportation 
+							land uses occupy 15%, and clearcuts occupy 2.5% of 
+							the landscape for Western Washington.<span>&nbsp;
+							</span>In the absence of full LIDAR cover, we also 
+							assume that 2.5% of the landscape may contain full 
+							obstructions and 5% may contain partial 
+							obstructions.<span>&nbsp; </span>We aggregated the 
+							types of “VisualBlight” using a NoisyMax node 
+							(assuming that the greatest source of blight will 
+							override lesser sources of blight), with clearcuts 
+							reducing view quality less than commercial, 
+							industrial, or transportation land uses.<span>&nbsp;
+							</span>We combined VisualBlight and Obstructions 
+							into an overall measure of ViewSink, where full 
+							obstructions deplete 100% of views, partial 
+							obstructions and/or high levels of blight deplete a 
+							greater degree of views, and no obstructions and/or 
+							blight provide no or minimal view sinks.<span>&nbsp;
+							</span>We “pegged the corners” with at the highest 
+							and lowest values and interpolated intermediate 
+							probabilities in the conditional probability table.&nbsp;
+							</p>
+							<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+							<p class="MsoNormal">Although not currently included 
+							in the models, dust, air pollution, or persistent 
+							cloudy or foggy conditions also reduce views, and 
+							could act as sinks at variable temporal scales.</p>
+							<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+							<p class="MsoNormal"><b>Aesthetic view flow.<span>&nbsp;
+							</span></b>Flow is simply accounted for through a 
+							line-of sight (ray casting) model (Johnson et al. 
+							2010).<b><span>&nbsp; </span></b>Relative quantities 
+							and qualities of views<b> </b>of desirable objects 
+							are projected toward their viewers, as are views of 
+							undesirable landscape features.<b><span>&nbsp;
+							</span></b>Steinitz et al. (2003) note that for 
+							southeast Arizona, the view of another residential 
+							property depletes view quality only within a 
+							0.5-mile radius of the viewer’s perspective (i.e., 
+							the effect drops off relatively quickly).<span>&nbsp;
+							</span>Thus, we use a steep decay function to model 
+							the effects of visual blight.</p>
+	    	<h5 class="style10">Spatial data</h5>
+							<p class="MsoNormal">
+							<table border="1" cellpadding="0" cellspacing="0" class="style22" style="mso-border-alt: solid black .5pt; mso-yfti-tbllook: 191; mso-padding-alt: 0pt 5.4pt 0pt 5.4pt; mso-border-insideh: .5pt solid black; mso-border-insidev: .5pt solid black">
+								<tr>
+									<td valign="top" width="98">
+									<p class="style23"><strong class="style19">
+									Model</strong><o:p></o:p></p>
+									</td>
+									<td valign="top" width="112">
+									<p class="style23"><strong class="style19">
+									Layer</strong><o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style23"><strong class="style19">
+									Source</strong><o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style23"><strong class="style19">
+									Resolution </strong> <o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style23"><strong class="style19">
+									Extent</strong><o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style23"><strong class="style19">
+									Year</strong><o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="3" valign="top" width="98">
+									<p class="style19">Viewshed source – Western 
+									Washington<o:p></o:p></p>
+									<p class="style19"><o:p>&nbsp;</o:p></p>
+									</td>
+									<td valign="top" width="112">
+									<p class="style19">Mountain<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">National Elevation 
+									Dataset<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Western Washington<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">n/a<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Lake<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">NLCD 2001<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">United States<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2001<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Ocean<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">NLCD 2001<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">United States<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2001<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="4" valign="top" width="98">
+									<p class="style19">Viewshed sink – Western 
+									Washington<o:p></o:p></p>
+									</td>
+									<td valign="top" width="112">
+									<p class="style19">Highways<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington State Dept. of 
+									Transportation<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector line file<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2007<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">
+									Commercial-industrial-transportation land 
+									use<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">NLCD 1992<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Western Washington<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">1992<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Clearcuts<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington DNR<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2006<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Obstructions<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Puget Sound LIDAR 
+									Consortium<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="MsoNormal"><span class="style19">3 
+									foot</span><span><sup class="style19">2</sup></span><span class="style19"> 
+									&amp; 6 foot</span><sup class="style19">2</sup><span class="style19">, 
+									downsampled to 30 x 30 m<o:p></o:p></span></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Parts of Western 
+									Washington<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2000-2006<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="3" valign="top" width="98">
+									<p class="style19">Viewshed use – Western 
+									Washington<o:p></o:p></p>
+									</td>
+									<td valign="top" width="112">
+									<p class="style19">Presence of housing<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">County assessors’ offices<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefiles<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Clallam, Grays Harbor, 
+									Jefferson, King, Kitsap, Mason, Snohomish, 
+									Thurston Cos., WA<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2004 (Kitsap Co.), 2006 
+									(King Co.); uncertain for others<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Housing values<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">County assessors’ offices<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefiles<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Grays Harbor, King, 
+									Kitsap, Mason, Snohomish, Thurston Cos., WA<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2004 (Kitsap Co.), 2006 
+									(King Co.); uncertain for others<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">View use<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">County assessors’ offices<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">King County, WA<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2006 (King Co.)<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="12" valign="top" width="98">
+									<p class="style19">Proximity source – Puget 
+									Sound<o:p></o:p></p>
+									</td>
+									<td valign="top" width="112">
+									<p class="style19">Beach<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington State Dept. of 
+									Health<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector line file<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2006<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Emergent wetland<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">NLCD 2001<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="MsoNormal"><span class="style19">
+									United States</span><o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2001<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Farmland<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">NLCD 2001<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="MsoNormal"><span class="style19">
+									United States</span><o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2001<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Forests<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">NLCD 2001<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="MsoNormal"><span class="style19">
+									United States</span><o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2001<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Lakefront<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington DNR (50 m 
+									buffer around lakes layer)<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">n/a<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Park<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Federal, state, and 
+									county park layers combined<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Western Washington<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">Variable; generally 
+									2000-present<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Riverfront<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington DNR (100 m 
+									buffer around rivers layer)<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">n/a<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Woody wetland<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">NLCD 2001<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">30 x 30 m<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">United States<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2001<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Water quality<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington Dept. of 
+									Ecology<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2004<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Area<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Calculated areas for 
+									above LULC types in Geoserver
+  <o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington &amp; parts of 
+									surrounding states<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">Variable<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Crime<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">U.S. Census Bureau (urban 
+									boundaries)<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2006<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Formal protection<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Federal, state, and 
+									county public land layers combined<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">Variable; generally 
+									2000-present<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="98">
+									<p class="style19">Proximity sink – Puget 
+									Sound<o:p></o:p></p>
+									</td>
+									<td valign="top" width="112">
+									<p class="style19">Highways<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington State Dept. of 
+									Transportation<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector line file<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2007<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="3" valign="top" width="98">
+									<p class="style19">Proximity use – Puget 
+									Sound<o:p></o:p></p>
+									</td>
+									<td valign="top" width="112">
+									<p class="style19">Urban proximity<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">Washington Dept. of 
+									Financial Management<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefile<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Washington State<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2000-2007<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Presence of housing<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">County assessors’ offices<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefiles<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Clallam, Grays Harbor, 
+									Jefferson, King, Kitsap, Mason, Snohomish, 
+									Thurston Cos., WA<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2004 (Kitsap Co.), 2006 
+									(King Co.); uncertain for others<o:p></o:p></p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" width="112">
+									<p class="style19">Housing values<o:p></o:p></p>
+									</td>
+									<td valign="top" width="106">
+									<p class="style19">County assessors’ offices<o:p></o:p></p>
+									</td>
+									<td valign="top" width="102">
+									<p class="style19">Vector shapefiles<o:p></o:p></p>
+									</td>
+									<td valign="top" width="95">
+									<p class="style19">Grays Harbor, King, 
+									Kitsap, Mason, Snohomish, Thurston Cos., WA<o:p></o:p></p>
+									</td>
+									<td valign="top" width="78">
+									<p class="style19">2004 (Kitsap Co.), 2006 
+									(King Co.); uncertain for others<o:p></o:p></p>
+									</td>
+								</tr>
+							</table>
+							</p>
+							<p class="style3">&nbsp;</p>
+			<h5 class="style10">Data sources</h5>
+			<p class="style13">Anderson, S.T. and S.E. West. 2002. The value of 
+			open space proximity and size: City versus suburbs. Working paper: 
+			Macalester College, Saint Paul, MN.</p>
+							<p class="style13">Benson E.D., et al. 1998. Pricing 
+							residential amenities: the value of a view&#39;. Journal 
+							of Real Estate Finance and Economics 16: 55-73. </p>
+							<p class="style13">Bin, O. and Polasky, S. 2005. 
+							Evidence on the amenity value of wetlands in a rural 
+							setting. Journal of Agricultural and Applied 
+							Economics 37 (3): 589-602.</p>
+							<p class="style13">Bourassa, S.C., et al. 2004. 
+							What’s in a view? Environment and Planning A 36: 
+							1427-1450.</p>
+							<p class="style13">Boyer T. and S. Polasky. 2004. 
+							Valuing urban wetlands: A review of non-market 
+							valuation studies. Wetlands 24 (4): 744-755.</p>
+							<p class="style13">Brander, L.M., et al. 2006. The 
+							empirics of wetland valuation: A comprehensive 
+							summary and a meta-analysis of the literature. 
+							Environmental and Resource Economics 33: 223-250.</p>
+							<p class="style13">Doss, C.R. and S.J. Taff. 1996. 
+							The influence of wetland type and wetland proximity 
+							on residential property values. Journal of 
+							Agricultural and Reosurce Economics 21: 120-129.</p>
+							<p class="style13">Geoghegan, J. 2002. The value of 
+							open spaces in residential land use. Land Use Policy 
+							19: 91-98. </p>
+							<p class="style13">Geoghegan, J., et al. 2003. 
+							Capitalization of open spaces into housing values 
+							and the residential property tax revenue impacts of 
+							agricultural easement programs. Agricultural and 
+							Resource Economics Review 32 (1): 33-45.</p>
+							<p class="style13">Grêt-Regamey, A., et al. 2008. 
+							Linking GIS-based models to value ecosystem services 
+							in an Alpine region. Journal of Environmental 
+							Management 89: 197-208.</p>
+							<p class="style13">Irwin, E.G. 2002. The effects of 
+							open space on residential property values. Land 
+							Economics 78 (4): 465-480.</p>
+							<p class="style13">Irwin, E.G. and N.E. Bockstael. 
+							2001. The problem of identifying land use 
+							spillovers: Measuring the effects of open space on 
+							residential property values. American Journal of 
+							Agricultural Economics 83 (3): 698-704.</p>
+							<p class="style13">Johnson, G.W. et al. 2010. 
+							Service Path Attribution Networks (SPANs): Spatially 
+							quantifying the flow of ecosystem services from 
+							landscapes to people. Lecture Notes in Computer 
+							Science 6016: 238-253.</p>
+							<p class="style13">Mahan, B.L., et al. 2000. Valuing 
+							urban wetlands: A property price approach. Land 
+							Economics 76: 100-113.</p>
+							<p class="style13">McConnell, V. and M. Walls. 2005. 
+							The value of open space: Evidence from studies of 
+							nonmarket benefits. Resources for the Future: 
+							Washington, DC.</p>
+							<p class="style13">Reynolds, J.E. and A. Regalado. 
+							2002. The effects of wetlands and other factors on 
+							rural land values. Appraisal Journal 72: 182-190.</p>
+							<p class="style13">Sander, H.A. and S. Polasky. 
+							2009. The value of views and open space: Estimates 
+							from a hedonic pricing model for Ramsey County, 
+							Minnesota, USA. Land Use Policy 26 (3): 837-845.</p>
+							<p class="style13">Schultz, S. and S.J. Taff. 2004. 
+							Implicit prices of wetland easements in areas of 
+							productive agriculture. Land Economics 80 (4): 
+							501-512.</p>
+							<p class="style13">Steinitz, C., et al. 2003. 
+							Alternative futures for changing landscapes: The 
+							Upper San Pedro River Basin in Arizona and Sonora. 
+							Island Press: Washington, DC.</p>
+							<p class="style13">Troy, A. and J.M. Grove. 2008. 
+							Property values, parks, and crime: A hedonic 
+							analysis in Baltimore, MD. Landscape and Urban 
+							Planning 87: 233-245. </p>
+							<p class="style13">U.S. Forest Service (USFS). 1995. 
+							Landscape aesthetics: A handbook for scenery 
+							management. USDA-Forest Service Agriculture Handbook 
+							Number 701.</p>
+							<p class="style13">Walsh, R.G., et al. 1990. The 
+							Consumptive Value of Travel Time on Recreation 
+							Trips. Journal of Travel Research 29 (1): 17-24.</p>
+			<p class="style3">&nbsp;</p>
+							<br><br></div>
+						</td>
+						<td width="50%" class="style9">&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+     </div>
+	<!-- end bd main -->
+
+   <div id="ft" role="contentinfo"><p></p>
+	   <p align="center">Copyright (C) 2009 
+	   Ecoinformatics Collaboratory. All rights reserved.</p>
+	</div>
+</div>
+<!-- end doc2 -->
+<!-- START js activation code -->
+<script type="text/javascript">
+	mouseovertabsmenu.init("mytabsmenu", "mysubmenuarea", true)
+	swfobject.registerObject("FlashID");
+</script>
+<!-- END js activation code -->
+
+</body>
+</html>
+

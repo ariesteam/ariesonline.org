@@ -1,0 +1,174 @@
+@import url(960/reset.css);
+@import url(960/text.css);
+
+html {
+	background-color: #E8EBEF;
+	text-align:middle;
+}
+
+body{
+	font-family: Calibri, "Helvetica Neue", Arial, Helvetica, sans-serif;
+	background:#ffffff;
+	color:#333;
+	position: relative;
+	width: 950px;
+	padding: 0.75em;
+	margin:0 auto;
+	line-height:1.5;
+	font-size:13px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	color:#555;
+	float:none;
+	margin:0px;
+}
+
+h4{
+	margin-bottom:10px;
+/*	padding-bottom:5px; */
+	border-bottom:1px solid #DDD;
+}
+
+
+a, a:link, a:visited, a:active, a:hover{
+	color:#999;
+	text-decoration: none;
+}
+
+.header{
+	background:#FFF;
+	padding:1.5em 1.5em 0px 1.25em;
+	float:none;
+}
+
+.navigation{
+	background:#FFF;
+	float:none;	
+	padding:1em 1.5em 0px 1.25em;
+}
+
+.navigation a{
+	background:#FFF;
+	padding:.25em .5em .25em;
+	float:left;
+	margin-right:.5em;
+	text-decoration:none;
+	color:#222;
+}
+
+.navigation a.selected{
+	background:#EEE;
+	font-weight:bold;
+}
+
+.content{
+	padding:1.5em;
+	margin:.25em 0px;
+	background:#FFF;
+}
+
+.flashContent{
+	padding:0px;
+	margin:10px 0px 0px 0px;	
+	background:#FFF;
+}
+
+.motto{
+	float:none;
+	margin:0px 1.5em 0px 0px;
+	color:#555;
+	font-size:175%;
+	line-height:1.5;
+}
+
+.leftColumn, .rightColumn{
+	width:400px;
+	float:left;
+	margin-right:1.5em;
+}
+
+.leftColumn{
+	clear:both;
+}
+
+.teaser{
+	float:left;
+	font-size: 1.22em;
+	color:#777777;
+}
+
+.teaser img{
+	/*border: 1px solid #999;*/
+}
+
+.teaser h4{
+	font-size:1.33em;
+	position:relative;
+	top:-2em;
+	margin:0px !important;
+	padding:.15em .35em 0px .5em !important;
+	float:none;
+	display:block;
+	background:#F0F0F0;
+	color:#222;
+	
+	filter:alpha(opacity=85); 
+	-moz-opacity: 0.85; 
+	opacity: 0.85;
+	
+	border:none;
+	border-top: 1px solid #FFF;
+}
+
+.teaser.grid_3{
+	margin:0px 20px 0px 0px !important;
+}
+
+.remark{
+	display:block;
+	clear:both;
+	color:#777;
+	margin-top:10px;
+	padding-top:10px;
+	border-top:1px solid #DDD;
+}
+
+hr{
+	margin:10px 0px;
+	border-color:#DDD;
+}
+
+.grid_6.alpha{
+	margin:0px 20px 0px 0px;
+}
+
+.grid_6.omega{
+	margin:0px;
+}
+
+.screenshots a{
+	display:block;
+	float:left;
+	margin:0px 10px 10px 0px;
+}
+
+/* @group Clearfix hack */
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* @end */
