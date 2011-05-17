@@ -100,11 +100,13 @@
 					<p><a href="soil.html">Sediment regulation</a></p>
 					<p><a href="fish.html">Subsistence fisheries</a></p>
 					<p><a href="rec.html">Recreation</a></p>
+                    <p><a href="coast.html">Coastal flood regulation</a></p>
 					<h5 class="style10">&nbsp;</h5>
                     
 		      		<h5 class="style10">Under development</h5>
+                    <p><a href="coast.html">Nutrient regulation</a></p>
 	    	  		<p style="margin-bottom:24px; width: 291px; height: 31px;">
-					<a href="coast.html">Coastal flood regulation</a></p>
+					
                     
 		      		<h5 class="style10">Beneath the surface</h5>
 	    	  		<p style="margin-bottom:24px; width: 291px; height: 111px;">
@@ -122,111 +124,599 @@
    			<div class="yui-u">
 			<!-- YOUR DATA GOES HERE -->
 			<h1 style="margin-top:32px;text-align:justify;margin-bottom:24px">
-			<img alt="" height="38" src="img/underconstruction.png" width="38">Text.. TextText.. TextText.. TextText.. TextText.. TextText.. 
-			TextText.. Text</h1>
+			<p>ARIES maps the potential provision locations of ecosystem services ("sources"), 
+            their users ("use"), and biophysical features that can deplete service flows 
+            ("sinks") using deterministic ecological process models or ad hoc Bayesian models.  
+            ARIES then uses a family of agent-based flow algorithms to map actual service flow 
+            from ecosystems to people (e.g., via hydrologic or transportation networks, 
+            proximity, or lines of sight).  Source, sink, and use models quantify these values 
+            in common units, either concrete (e.g., tons of CO<sub>2</sub>, mm of water, kg of fish) or 
+            abstract (e.g., aesthetic value or recreation site quality, measured from 0-100).</p>
+
+            <p>Each ecosystem service is either a "provisioning service<sup>1</sup>" with a "beneficial carrier" 
+              (i.e., the carrier of that benefit provides something useful to people, such as drinking
+              water, fish, or aesthetic value) or a "preventive service" with a "detrimental carrier" 
+              (i.e., the carrier is something damaging to people, e.g., excess sediment, nutrients, or 
+              flood water).  For provisioning services, the source value provides the ecosystem service 
+              and sinks limit the amount of service received, while for preventive services, sinks are 
+              beneficial (i.e., areas that absorb flood water, sediment, or nutrients).  The benefits of 
+              some services like sediment regulation may be both provisioning and preventive - in some 
+              cases excess sediment or excessively turbid waters damage human well-being, while in other 
+              cases naturally delivered sediment provides benefits, such as in maintaining soil fertility 
+              or natural coastal processes.</p>
+
+            <p>The flow model for each ecosystem service moves according to the spatial scale and movement 
+              process specific to that service, which may or may not include a decay function.  Finally, 
+              knowing whether the benefit is rival or non-rival lets us know whether the use of that service 
+              depletes the quantity available to other potential users on the landscape.  When provided with 
+              all the information in the table below, ARIES' flow models can fully illustrate the ecosystem 
+              services connections between people and their surrounding environment.</p>
+
+            <p><sup>1</sup>Note that this is a different use of the term "provisioning service" than the popular Millennium 
+              Ecosystem Assessment term for provisioning services, which indicate ecosystem goods that are 
+              physically extracted from the ecosystem and used for human benefit.</p></h1>
             <table width="100%" border="0" cellpadding="6px" style="height: 328px">
-            <tr><td colspan="3"><h4 style="height: 22px;" class="style10">Practical uses</h4>
+            <tr><td colspan="3"><h4 style="height: 22px;" class="style10">Source, sink, use, and flow characteristics for ARIES ecosystem services modules</h4>
 						<table border="0" cellpadding="0" class="style12" style="mso-cellspacing: 1.5pt">
 							<thead>
-								<tr>
+						<tr>
 									<td>
 									<p align="center" class="MsoNormal"><b>
-									<span>ARIES use<o:p></o:p></span></b></p>
+									<span>Service<o:p></o:p></span></b></p>
 							</td>
 							<td>
-							<p align="center" class="MsoNormal"><b><span>Sample 
-							questions<o:p></o:p></span></b></p>
+							<p align="center" class="MsoNormal"><b><span>Carbon sequestration and storage<o:p></o:p></span></b></p>
 							</td>
 							<td>
-							<p align="center" class="MsoNormal"><b><span>Spatial 
-							scale<o:p></o:p></span></b></p>
+							<p align="center" class="MsoNormal"><b><span>Open space proximity<o:p></o:p></span></b></p>
 							</td>
 						</tr>
 					</thead>
 					<tr>
 						<td>
-						<p class="MsoNormal"><span>Spatial assessment and 
-						distribution of ecosystem services<o:p></o:p></span></p>
+						<p class="MsoNormal"><b><span>Service/carrier type<o:p></o:p></span></b></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>What ecosystem services are 
-						being provided and where in space? Where are the 
-						beneficiaries of ES located in the landscape?<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Provisioning/Beneficial<o:p></o:p></span></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Local to National<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Provisioning/Beneficial<o:p></o:p></span></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<p class="MsoNormal"><span>Spatial economic valuation of 
-						ecosystem services<o:p></o:p></span></p>
+						<p class="MsoNormal"><b><span>Medium/units<o:p></o:p></span></b></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>What is the economic value of 
-						the ES being provided, and how is this value distributed 
-						in space? What compensation amounts should be requested 
-						for a given environmental damage?<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Tons CO<sub>2</sub> absorbed/emitted<o:p></o:p></span></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Local to National<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Open space (abstract units, 0-100)<o:p></o:p></span></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<p class="MsoNormal"><span>Optimization of payment 
-						schemes for Ecosystem Services (PES)<o:p></o:p></span></p>
+						<p class="MsoNormal"><b><span>Scale<o:p></o:p></span></b></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Where is it best to invest in 
-						payment schemes for ES so as to optimize investment? 
-						What type of PES scheme is the most effective given the 
-						nature of the environmental assets? How are opportunity 
-						costs distributed in space? How are probabilities of 
-						land conversion distributed in space?<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Global<o:p></o:p></span></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Watershed to Regional<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Walking distance<o:p></o:p></span></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<p class="MsoNormal"><span>Conservation planning<o:p></o:p></span></p>
+						<p class="MsoNormal"><b><span>Movement<o:p></o:p></span></b></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Where is it most efficient 
-						and cost-effective to invest in conservation for the 
-						combined provision of biodiversity and important ES?<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Atmospheric mixing<o:p></o:p></span></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Local, watershed, regional<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Walking simulation<o:p></o:p></span></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<p class="MsoNormal"><span>Spatial policy planning<o:p></o:p></span></p>
+						<p class="MsoNormal"><b><span>Decay<o:p></o:p></span></b></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>What policy tools (payments, 
-						penalties, property rights, persuasion and prescription) 
-						are likely to be most effective for the maintenance of 
-						ES and the minimization of environmental impact?<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Local, watershed, regional<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Gaussian<o:p></o:p></span></p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<p class="MsoNormal"><span>Forecasting of change in ES 
-						provision<o:p></o:p></span></p>
+						<p class="MsoNormal"><b><span>Rivalness<o:p></o:p></span></b></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>How is land use change going 
-						to affect the provisioning and value of ES?<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Rival<o:p></o:p></span></p>
 						</td>
 						<td>
-						<p class="MsoNormal"><span>Local, watershed, regional<o:p></o:p></span></p>
+						<p class="MsoNormal"><span>Nonrival<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Source<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Vegetation and soil carbon sequestration<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Open spaces, particularly in urban and suburban areas<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Sink<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Stored carbon release (fire, land use change)<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Obstructions (highways)<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Use<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>CO<sub>2</sub> emitters<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Housing/housing value<o:p></o:p></span></p>
+						</td>
+					</tr>
+<tr>
+									<td>
+									<p align="center" class="MsoNormal"><b>
+									<span>Service<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Aesthetic viewsheds<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Flood regulation<o:p></o:p></span></b></p>
+							</td>
+						</tr>
+					</thead>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Service/carrier type<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Provisioning/Beneficial<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Preventive/Detrimental<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Medium/units<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Scenic beauty (abstract units, 0-100)<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Water (runoff, mm/yr)<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Scale<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Viewshed<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Watershed<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Movement<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Line of sight<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Hydrologic flow<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Decay<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Inverse square<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Rivalness<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Nonrival<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Nonrival<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Source<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Mountains, water bodies, scenic vegetation<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Rainfall and snowmelt<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Sink<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Visual blight<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Water absorbed by soil and vegetation<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Use<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Housing/housing value<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Economic assets in floodplains<o:p></o:p></span></p>
+						</td>
+					</tr>
+<tr>
+									<td>
+									<p align="center" class="MsoNormal"><b>
+									<span>Service<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Sediment regulation<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Water supply<o:p></o:p></span></b></p>
+							</td>
+						</tr>
+					</thead>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Service/carrier type<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Provisioning or Preventive<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Provisioning/Beneficial<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Medium/units<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Sediment (tons)<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Surface or groundwater (mm/yr)<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Scale<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Watershed<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Watershed<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Movement<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Hydrologic flow<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Hydrologic flow, surface and groundwater<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Decay<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Rivalness<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Rival<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Rival<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Source<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Landscapes alonog waterways<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Precipitation, infiltration, and others<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Sink<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Riparian zones where deposition occurs<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Infiltration, evapotranspiration, others<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Use<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Multiple<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Surface water withdrawals or wells<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+							<td>
+									<p align="center" class="MsoNormal"><b>
+									<span>Service<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Coastal flood regulation<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Subsistence fisheries<o:p></o:p></span></b></p>
+							</td>
+						</tr>
+					</thead>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Service/carrier type<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Preventive/Detrimental<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Provisioning/Beneficial<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Medium/units<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Storm surge (m)<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Fish (kg)<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Scale<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Coastal zones<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Walking distance<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Movement<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Wave runup<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Walking simulation<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Decay<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Gaussian<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Rivalness<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Nonrival<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Rival<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Source<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Coastal zones prone to storms<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Fishing grounds<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Sink<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Vegetation and topographic features<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Use<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Economic assets in coastal flood zones<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Subsistence communities near fisheries<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+									<td>
+									<p align="center" class="MsoNormal"><b>
+									<span>Service<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Recreation<o:p></o:p></span></b></p>
+							</td>
+							<td>
+							<p align="center" class="MsoNormal"><b><span>Nutrient regulation<o:p></o:p></span></b></p>
+							</td>
+						</tr>
+					</thead>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Service/carrier type<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Provisioning/Beneficial<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Preventive/Detrimental<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Medium/units<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Recreational enjoyment (abstract units, 0-100)<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Nutrients in water (kg N/P)<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Scale<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Driving distance<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Watershed<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Movement<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Driving simulation (transportation model)<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Hydrologic flow<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Decay<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Gaussian<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p class="MsoNormal"><b><span>Rivalness<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Nonrival but congestible<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Nonrival<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Source<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Recreational areas suitable for a given activity<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Landscapes along waterways<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Sink<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>None<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Filters in landscape and along waterways<o:p></o:p></span></p>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						<p class="MsoNormal"><b><span>Use<o:p></o:p></span></b></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Recreationists interested in a given activity<o:p></o:p></span></p>
+						</td>
+						<td>
+						<p class="MsoNormal"><span>Multiple<o:p></o:p></span></p>
 						</td>
 					</tr>
 				</table>
